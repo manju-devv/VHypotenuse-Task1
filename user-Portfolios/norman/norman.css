@@ -1,0 +1,139 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 30px;
+}
+
+/* List Styling for Projects, Education, and Skills */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+ul li strong {
+    color: #0066cc;
+}
+
+/* Link Styling */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header and Contact Information Styling */
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+p a {
+    color: #0066cc;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Border and Spacing for Lists */
+ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: '\2022'; /* Bullet symbol */
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* Skills Section - Visual Styling */
+ul li {
+    margin-left: 20px;
+}
+
+ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Soft Skills Section - Rounded box */
+ul li {
+    background-color: #f0f8ff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}
