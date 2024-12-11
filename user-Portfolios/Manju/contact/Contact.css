@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#91AC8F;
+    --border-color: #ccc
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    position: relative;
+    font-family: "Red Hat Display", sans-serif;
+}
+h1{
+    top: 5%;
+    position: absolute;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 0.5px solid ;
+    padding: 50px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.user-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label{
+    width: 100%;
+}
+.username,.email{
+    display: flex;
+    gap: 30px;
+}
+#username,#email,#phone{
+    height: 30px;
+    border:1px solid var(--border-color);
+    border-radius: 3px;
+    outline: none;
+    margin-top: -5px;
+    padding: 0 15px;
+}
+select{
+    border:1px solid var(--border-color);
+    height: 30px;
+    font-size: 12px;
+    border-radius: 3px;
+    outline: none;
+    width: 80px;
+}
+
+#feedback{
+    resize:none;   
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    width: 350px;
+    border-radius: 3px;
+    margin-top: 7px;
+    margin-left: 30px;
+    height: 120px;
+}
+
+.button{
+    width: 100px;
+    padding: 5px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: skyblue;
+    border: none;
+    border-radius: 3px;
+    margin-left: 35%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button:hover{
+    box-shadow: 2px 2px 4px #F5F0CD;
+    transform: translateX(-3px) translateY(-3px);
+}
+
+
+
+@media (max-width:600px) {
+    h1{
+      font-size: 16px;
+    }
+    .username,.email{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    #username,#email,#phone{
+        width: 60%;
+    }
+    select{
+        margin-bottom: 8px;
+    }
+    #feedback{
+        width: 300px;
+        margin-left: 1px;
+    }
+    
+}
