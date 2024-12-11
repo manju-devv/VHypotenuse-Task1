@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Jeevan A - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <header data-aos="fade-down">
         <h1>Jeevan A</h1>
         <p>Full Stack Developer | Data Analytics | AI-driven Solutions</p>
     </header>
 
-    <section id="objective">
+    <section id="objective" data-aos="fade-up">
         <h2>Objective</h2>
         <p>Aspiring software developer with expertise in full stack development, data analytics, and AI-driven solutions. Eager to contribute to cutting-edge projects in fintech and digital commerce while enhancing leadership and project management skills.</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
         <h2>Experience</h2>
         <h3>Full Stack Developer Intern</h3>
         <p><strong>Liquidmind.ai | July 2024 – October 2024</strong></p>
@@ -29,7 +32,7 @@
         </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
         <h2>Projects</h2>
         <h3>Speech Emotion Analysis Using Python</h3>
         <p>Utilized Python libraries like NumPy, Pandas, DecisionTreeClassifiers, Keras, and TensorFlow to process and analyze speech data for emotion recognition.</p>
@@ -41,7 +44,7 @@
         <p>Applied data - analytics techniques to a preexisting dataset, identifying ideal crop rotations for different seasons using Python.</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" data-aos="fade-up">
         <h2>Skills</h2>
         <ul>
             <li>Full Stack Development (Python, JavaScript)</li>
@@ -54,16 +57,32 @@
         </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <h2>Contact Me</h2>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/jeevan-a-108740215/" target="_blank">Jeevan A</a></p>
         <p>GitHub: <a href="https://github.com/Jeevan-C0des" target="_blank">github.com/https://github.com/Jeevan-C0des</a></p>
     </section>
-
-    <footer>
+    <form data-aos="fade-up">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <footer data-aos="fade-up">
         <p>© 2024 Jeevan A. All Rights Reserved.</p>
     </footer>
     <link rel="stylesheet" href="Jeevan.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 
 </body>
 </html>
