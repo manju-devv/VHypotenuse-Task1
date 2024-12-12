@@ -4,20 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Resume - Norman Baretto</title>
-        <link rel="stylesheet" href="norman.css"
-        
+        <link rel="stylesheet" href="norman.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">NB</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <h1>Norman Baretto</h1>
         <p>Bangalore, Karnataka | <a href="mailto:norman.baretto03@gmail.com">norman.baretto03@gmail.com</a> | +91-8217069646</p>
 
-        <div class="section">
+        <div class="section" id="about">
             <h2>Objective</h2>
             <p>A passionate and driven Computer Science Engineering student with a strong foundation in data structures and algorithms, and a keen interest in software development. Seeking a challenging internship or entry-level position where I can apply my problem-solving skills and contribute to innovative projects.</p>
         </div>
 
-        <div class="section">
+        <div class="section" id="projects">
             <h2>Relevant Projects</h2>
             <ul>
                 <li><strong>Face Detection System</strong> - Developed a face detection system using Python, TensorFlow, Keras, and OpenCV, improving accuracy by 30%.</li>
@@ -27,7 +39,7 @@
             </ul>
         </div>
 
-        <div class="section">
+        <div class="section" id="education">
             <h2>Education</h2>
             <ul>
                 <li><strong>Dayananda Sagar University</strong> - B.Tech (CSE)</li>
@@ -36,7 +48,7 @@
             </ul>
         </div>
 
-        <div class="section">
+        <div class="section" id="skills">
             <h2>Technical Skills</h2>
             <ul>
                 <li>Programming Languages: C++, C, Python, Java</li>
@@ -59,7 +71,7 @@
             </ul>
         </div>
     </div>
-    <div class="form-container">
+    <div class="form-container" id="contact">
     <form action="#" method="post"> 
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
