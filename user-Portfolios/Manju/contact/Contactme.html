@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./Contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form id="form">
+        <div class="user-details">
+            <div class="username">
+                <label for="username"> Enter FullName:</label>
+                <input type="text" name="username" id="username" placeholder="enter name..." required>
+            </div>
+            <div class="email">
+                <label for="email">Enter Email:</label>
+                <input type="email" placeholder="enter email" id="email" required>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number:</label>
+                <select name="country-code" id="country-code" required>
+                    <option value="+91">Ind (+91)</option>
+                    <option value="+1">USA (+1)</option>
+                    <option value="+44">UK (+44)</option>
+                    <option value="+61">Aus (+61)</option>
+                </select>
+                <input type="tel" id="phone" placeholder="Enter phone number" required pattern="^[0-9]{10}$" maxlength="10">
+            </div>
+            <div class="textbox">
+                <label for="feedback">Please provide feedback:</label> <br>
+                <textarea name="feedback" id="feedback" placeholder="enter your feedback" maxlength="500" rows="5" cols="30" required></textarea>
+            </div>
+            <button type="submit" class="button">submit</button>
+        </div>
+    </form>
+    <script>
+        const button = document.querySelector(".button");
+        const form = document.getElementById("form");
+        button.addEventListener("click",(e)=>{
+            if (form.checkValidity()) {
+            alert("form submitted! successfully");
+            } else {
+            alert("please fill details");
+            }
+        })
+    </script>
+</body>
+</html>
