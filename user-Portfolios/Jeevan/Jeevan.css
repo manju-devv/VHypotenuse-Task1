@@ -51,6 +51,10 @@ form {
 
 input, textarea {
     padding: 12px;
+    min-width: 530px;
+    max-width: 530px;
+    max-height: 150px;
+    min-height: 50px;
     border: 1px solid #ddd;
     border-radius: 6px;
     transition: border-color 0.3s ease;
