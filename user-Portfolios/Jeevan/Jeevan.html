@@ -5,13 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Jeevan A - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Jeevan.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="contact-menu">
+        <h3>Contact Info</h3>
+        <p>Email: Jcodes52@gmail.com</p>
+        <p>Phone: +91 8197201754</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jeevan-a-108740215/" target="_blank">Jeevan A</a></p>
+        <p>GitHub: <a href="https://github.com/Jeevan-C0des" target="_blank">github.com/Jeevan-C0des</a></p>
+    </div>
 
-    <header data-aos="fade-down">
+    <header data-aos="fade-down">                                   
         <h1>Jeevan A</h1>
         <p>Full Stack Developer | Data Analytics | AI-driven Solutions</p>
     </header>
@@ -57,11 +70,6 @@
         </ul>
     </section>
 
-    <section id="contact" data-aos="fade-up">
-        <h2>Contact Me</h2>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/jeevan-a-108740215/" target="_blank">Jeevan A</a></p>
-        <p>GitHub: <a href="https://github.com/Jeevan-C0des" target="_blank">github.com/https://github.com/Jeevan-C0des</a></p>
-    </section>
     <form data-aos="fade-up">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -76,6 +84,7 @@
     </footer>
     <link rel="stylesheet" href="Jeevan.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="Jeevan.js"></script>
     <script>
         AOS.init({
             duration: 2000,
