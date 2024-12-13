@@ -1,0 +1,16 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: beige;
+}
+span{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+span:hover{
+    text-decoration: underline;
+}
